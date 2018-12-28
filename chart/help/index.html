@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Guide For Interactive Human Anatomy | Male/Female - Front/Back</title>
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+  <script src="assets/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+ 
+
+<body>
+	<div class="container">
+	
+
+	  <h1 class="center">&ldquo;Interactive Human Anatomy | Male/Female - Front/Back&rdquo;</h1>
+
+  <div class="borderTop">
+    <p class="prepend-top append-0">Thank you for purchasing our work. If you have any questions that are beyond the scope of this help file, please feel free to <a href="http://www.humananatomyillustrations.com">contact us</a>. Thanks so much!</p>
+  </div>
+		
+		
+    <hr><h2 id="up" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+      <li><a href="#GeneralOverview">General overview</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#wp">How to integrate the diagram into WordPress site?</a></li>
+      <li><a href="#organs-customization">Organs Customization</a></li>
+      <li><a href="#markers">How to add/remove and modify spots?</a></li>
+      <li><a href="xyguide.html">How to get X, Y coordinates?</a></li>
+    </ol>
+    <h2 id="up" class="alt">FAQ</h2>
+    <ol>
+      <li><a href="#load-time">How to decrease the loading time?</a></li>
+      <li><a href="#resize">How to resize the diagram?</a></li>
+      <li><a href="#inactive">I installed the diagram but I can see a black image and no interaction?</a></li>
+      <li><a href="#image">I installed the diagram but I can't see the model image?</a></li>
+      <li><a href="#away">The hover popup appears away from the mouse?</a></li>
+      <li><a href="#freelance">I need to make some special customization, are you available for freelance work?</a></li>
+	  </ol>
+	  <div align="center"><img src="assets/line.png">
+	    </div>
+	  <h3 id="GeneralOverview"><strong><u>General overview</u></strong> - <a href="#up">top</a></h3>
+		<p align="left">This is an interactive template of human anatomy displaying 2 slides;<br>1- Front view of male and female.<br>2- Back view of male and female.<br>Each slide displays the main external parts of male and female anatomy front and back views. Also it gives you an option to add clickable spots anywhere on the illustration and link it to any web page.</p>
+
+	  
+    <hr><h3 id="installation"><strong><u>Installation</u></strong> - <a href="#up">top</a></h3>
+	  <p>To insert the diagram to your website, please follow these steps:</p>
+	  <ol>
+	    <li>Open the "template/index.html" file using any code editor such as Sublime, or Notepad++.</li>
+	    <li>Copy the code from the head section and paste it before the closing head tag of your page<br/><img src="assets/head.png"></li>
+	    <li>Upload all the supporting files ( model images and the CSS file and the JS files plus the jquery file) to your site. If you want to put them in another directory, please make sure that the relative path is correct or use their absolute path "recommended", like this<br><code>&lt;script src="http://www.yoursite.com/template/interact-script.js" type="text/javascript"&gt;&lt;/script&gt;</code></li>
+	    <li>Copy the code from the body tag and paste it anywhere you want to insert the diagram in your page<br/><img src="assets/body.png"></li>
+      <li>Make sure to use the full path of the model images to match the location in your website, like this:<br>
+
+       <code> &lt;image overflow="visible" width="1390" height="1370" xlink:href="http://www.yoursite.com/template/front-image.png" &gt;&lt;/image&gt;</code>
+
+       <br>and<br>
+
+       <code> &lt;image overflow="visible" width="1390" height="1370" xlink:href="http://www.yoursite.com/template/back-image.png" &gt;&lt;/image&gt;</code>
+
+
+      </li>
+      <li>Save and start the diagram customization.<br><br>
+        <strong>Important note:</strong> With some templates and due to divs arrangement, the floating hover popup may be pushed away from where it should be, to avoid that we recommend that you cut the span organs-tip line of code and paste it just after the opening body tag of the page like this:<br>
+          <code><strong>&lt;body&gt;</strong></code><br>
+          <code><strong>&lt;span id="organs-tip"&gt;&lt;/span&gt;</strong></code></li>
+      </ol>
+    
+    
+    <hr><h3 id="wp"><strong>How to integrate the diagram into WordPress site</strong> - <a href="#up">top</a></h3>
+      <table width="618" border="0">
+          <tr>
+            <td><div align="center"><img src="assets/Wordpress1.png" width="64" height="64"> </div></td>
+            <td><ol>
+              <li>Upload the "template" folder to your site using FTP client to the directory "wp-content".<br>To test it, use the direct link to open the template in your browser. It should be a link like this:<br><code><strong>http://www.yoursite.com/wp-content/template/index.html</strong></code><br>You can use <a href="https://filezilla-project.org/download.php">FileZilla</a> as FTP client, and here is a <a href="https://www.youtube.com/watch?v=A-gr0LIWT64">video tutorial</a> about using it.</li>
+              <li>Install the <a href="http://wordpress.org/plugins/insert-html-snippet/">HTML Snippet</a> plugin to create a new snippet for the template.</li>
+              <li>Open the included file "template/for-wordpress-only.html" using any code editor such as Sublime, or Notepad++.</li>
+              <li>Copy the entire code and paste it in a new snippet but make sure you are using your real site links instead of the default example links in the first few lines of the code and for the model images as well, like this:
+
+             <code> &lt;image overflow="visible" width="1390" height="1370" xlink:href="http://www.yoursite.com/wp-content/template/front-image.png" &gt;&lt;/image&gt;</code>
+
+             <br>and<br>
+
+             <code> &lt;image overflow="visible" width="1390" height="1370" xlink:href="http://www.yoursite.com/wp-content/template/back-image.png" &gt;&lt;/image&gt;</code>
+
+
+              </li>
+              <li>Save the new snippet and use the shortcode in any page to display the template.<br><br>
+                <strong>Important note:</strong> With <strong>some</strong> themes and due to divs arrangement, the floating hover popup may be pushed away from where it should be, to avoid that we recommend that you cut the span organs-tip line of code and paste it just after the opening body tag or in the footer section of the theme like this:<br>
+
+          <code><strong>&lt;body&gt;</strong></code><br>
+          <code><strong>&lt;span id="organs-tip"&gt;&lt;/span&gt;</strong></code><br>
+
+          You can access the theme files and find the file that has the opening body tag through your admin panel > "appearance" > "Editor" > in the right side section > find the file that has the opening body tag (usually: header.php) > paste this code <code>&lt;span id="organs-tip"&gt;&lt;/span&gt;</code> just after the line of the opening body code then press "Update File".
+         </li>
+            </ol>You have also the <a href="http://wordpress.org/extend/plugins/search.php?q=iframe">iframe</a> option.</td>
+          </tr>
+        </table>
+    
+    
+    <h3 id="organs-customization"><strong><u>Organs Customization?</u></strong> - <a href="#up">top</a></h3>
+    <h3 class="style26">You can customize the colors, links, hover description for each organ independently through the included &quot;back-parts.js&quot; and &quot;front-parts.js&quot; like this:</h3>
+      <table width="618" border="0">
+        <tr>
+          <td>
+            <ul>
+              <li><strong>'hover'</strong>: '<span class="style18">You can use HTML code</span>', //organ hover content <br><strong>NOTE</strong>: The hover popup expands as much as you put content for an organ. but the hover popup is not responsive so don't add too much content. </li>
+              <li><strong>'enable'</strong><span class="style18">:true</span>,//true/false to enable/disable this organ.</li>
+              <li><strong>'url'</strong>:'<span class="style18">http://www.yourlink.com/</span>', //Goto URL</li>
+              <li><strong>'target'</strong>:'<span class="style18">same_window</span>', //open link in new window:"new_window", open in current window:"same_window", or "None" for nothing.<br>
+              <strong>Trick</strong>: Using 'None' is very useful if you have enough content in the hover popup and you don't want to link this organ to other pages).</li>
+              <br>
+              <li><strong>'upColor'</strong>:'<span class="style18">red</span>', //organ color when page loads</li>
+              <li><strong>'upOpacity'</strong>:'<span class="style18">0</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <li><strong>'outlineUpColor'</strong>:'#<span class="style18">0000FF</span>', //outline color when page loads</li>
+              <li><strong>'outlineUpOpacity'</strong>:'<span class="style18">0.4</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <br>
+              <li><strong>'overColor'</strong>:'<span class="style18">red</span>', //organ color when mouse hover</li>
+              <li><strong>'overOpacity'</strong>:'<span class="style18">0.3</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <li><strong>'outlineOverColor'</strong>:'#<span class="style18">0000FF</span>', //outline color when mouse hover</li>
+              <li><strong>'outlineOverOpacity'</strong>:'<span class="style18">1</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <br>
+              <li><strong>'downColor'</strong>:'#<span class="style18">993366</span>', //organ color when mouse clicking</li>
+              <li><strong>'downOpacity'</strong>:'<span class="style18">0.5</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <li><strong>'outlineDownColor'</strong>:'#<span class="style18">FFFF00</span>', //outline color when mouse clicking</li>
+              <li><strong>'outlineDownOpacity'</strong>:'<span class="style18">0.8</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+            </ul>
+          <td><div align="left"><a href="https://www.w3schools.com/colors/colors_picker.asp"><img src="assets/HTMLColorPicker.png" width="110" height="115" border="0"></a></div></td>
+        </tr>
+      </table>
+
+      <hr>
+
+
+
+      <h3 id="markers"><strong>How to add/remove and modify spots?</strong> - <a href="#up">top</a></h3>
+      <p>Using  the included &quot;<strong>front-spots.js</strong>&quot;, &quot;<strong>back-spots.js</strong>&quot; files, for your convenience you can just copy/paste the code of any of the existing spots and change its parameters, You can use <strong><a href="xyguide.html">this</a></strong> guide to get the X, Y coordinates.</p>
+      <table width="790" border="0">
+          <tr>
+            <td><ul>
+              <li><strong>'hover'</strong>:'<span class="style18">You can use HTML code</span>', //the content of the hover popup<br>
+                <strong>NOTE</strong>: The hover popup expands as much as you put content for a spot. but the hover popup is not responsive so adding too much content may affect mobile users view.
+              </li>
+              <li><strong>'pos_X'</strong>:'<span class="style25">84</span>', //location of the spot on X axis (<a href="xyguide.html">How</a>?)</li>
+              <li><strong>'pos_Y'</strong>:'<span class="style25">137</span>', //location of the spot on Y axis (<a href="xyguide.html">How</a>?)</li>
+              <li><strong>'diameter'</strong>:'<span class="style25">16</span>', // diameter of this spot</li>
+              <br>
+              <li><strong>'upColor'</strong>:'<span class="style18">red</span>', //spot color when page loads</li>
+              <li><strong>'upOpacity'</strong>:'<span class="style18">0.8</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <li><strong>'outlineUpColor'</strong>:'#<span class="style18">FFFF00</span>', //outline color when page loads</li>
+              <li><strong>'outlineUpOpacity'</strong>:'<span class="style18">0.8</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <br>
+              <li><strong>'overColor'</strong>:'#<span class="style18">FAE105</span>', //spot color when mouse hover</li>
+              <li><strong>'overOpacity'</strong>:'<span class="style18">1</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <li><strong>'outlineOverColor'</strong>:'#<span class="style18">FF0000</span>', //outline color when mouse hover</li>
+              <li><strong>'outlineOverOpacity'</strong>:'<span class="style18">1</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <br>
+              <li><strong>'downColor'</strong>:'#<span class="style18">FF6600</span>', //spot color when mouse clicking</li>
+              <li><strong>'downOpacity'</strong>:'<span class="style18">1</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <li><strong>'outlineDownColor'</strong>:'#<span class="style18">CC3300</span>', //outline color when mouse clicking</li>
+              <li><strong>'outlineDownOpacity'</strong>:'<span class="style18">1</span>', // opacity of that color from 0-1 (e.g 0.3, can be 0 to hide it)</li>
+              <br>
+              <li><strong>'url'</strong>:'<span class="style18">http://www.yourlink.com/</span>', //Goto URL</li>
+              <li><strong>'target'</strong>:'<span class="style18">same_window</span>', //open link in new window:"new_window", open in current window:"same_window", or "None" for nothing.<br>
+              <strong>Trick</strong>: Using 'None' is very useful if you have enough content in the hover popup and you don't want to link this organ to other pages).</li>
+              <li><strong>'enable'</strong><span class="style18">:true</span>,//true/false to enable/disable this organ.</li>
+            </ul></td>
+            <td><div align="left"><img src="assets/spots.png" ></div></td>
+          </tr>
+        </table>
+<hr>
+    
+ 
+ <h3 id="load-time"><strong>How to decrease the loading time?</strong> - <a href="#up">top</a></h3>
+    <p align="left">All JS/CSS files are small sized files and you don't need to worry about them, but model image could be large size file because we are using a high quality image with large dimensions and transparent background, you may not need all this in your website, so if your website background is white, then you can save the model image as normal PNG or even JPG to decrease the file size, you may also shrink the model image as much as you need for your website, that will decrease the final file size and the loading time.</p>
+<hr>
+    
+ 
+ <h3 id="resize"><strong>How to resize the diagram, and remove any space above the diagram?</strong> - <a href="#up">top</a></h3>
+    <p align="left">The diagram has a default size for different screen sizes but if you put it in a small div according to your website design, you may notice an empty area above and below the diagram, to remove this gap simply decrease the height value of the organswrapper svg in the included illustration-style.css file.<br><strong>Note:</strong> A fixed height value in <strong>px</strong> is required for IE to load the SVG shape in the required size otherwise it will be shrinked to a minimum size, so you can adjust the height value but don't delete it.</p>
+<hr>
+    
+ 
+ <h3 id="inactive"><strong>I installed the diagram but I can see a black image only and no interaction?</strong> - <a href="#up">top</a></h3>
+ <p>Most probably the path of the supporting files (JS files) are not correct, you can use the full path of the supporting file in the html code like this:<br>
+
+<code style="font-size:10px;">&lt;script src="http://www.yoursite.com/template/interact-script.js" type="text/javascript"&gt;&lt;/script&gt;</code>
+
+ </p>
+    <hr>
+ 
+ <h3 id="image"><strong>I installed the diagram but I can't see the model image?</strong> - <a href="#up">top</a></h3>
+ <p>Most probably the path of the image in the html code is not correct, you can use the full path of the model image in the html code like this:<br>
+
+<code style="font-size:10px;"> &lt;image overflow="visible" width="1390" height="1370" xlink:href="<strong><u>http://www.yoursite.com/template/front-image.png</u></strong>"</code><br>
+<code style="font-size:10px;"> &lt;image overflow="visible" width="1390" height="1370" xlink:href="<strong><u>http://www.yoursite.com/template/back-image.png</u></strong>"</code>
+
+ </p>
+<hr>
+ 
+ <h3 id="away"><strong>The hover popup appears away from the mouse?</strong> - <a href="#up">top</a></h3>
+ <p>With some website templates and due to divs arrangement, the floating hover popup may be pushed away from where it should be, to avoid that we recommend that you cut the span organs-tip line of code and paste it just after the opening body tag of the page like this:<br>
+          <code><strong>&lt;body&gt;</strong></code><br>
+          <code><strong>&lt;span id="organs-tip"&gt;&lt;/span&gt;</strong></code>
+
+          <br><br>If you are using WordPress, You can access the theme files and find the file that has the opening body tag through your admin panel > "appearance" > "Editor" > in the right side section > find the file that has the opening body tag (usually: header.php) > paste this code <br>
+          <code><strong>&lt;span id="organs-tip"&gt;&lt;/span&gt;</strong></code><br> just after the line of the opening body code then press "Update File".
+
+ </p>
+
+ <hr>
+ <h3 id="freelance"><strong>I need to make some special customization, are you available for freelance work?</strong> - <a href="#up">top</a></h3>
+ <p>Yes, please <a href="http://www.humananatomyillustrations.com">contact us</a> and we will get in touch with you and discuss the requirements and give you a quote to do it.
+
+ </p>
+    
+    
+    <hr><h3 align="left"><strong>That's it :)</strong></h3>
+          <p align="left">Once again, thank you so much for purchasing our work. As we said at the beginning, we will be glad to help you if you have any questions relating to this file. No guarantees, but we will do our best to assist. If you need a special customization, please don't hesitate to <a href="http://www.humananatomyillustrations.com">contact us</a>.</p>
+      <p class="append-bottom alt large"><strong>Thank you</strong><br>
+<a href="http://www.humananatomyillustrations.com">HumanAnatomyIllustration.com</a> Team
+      	</p>
+</div><!-- end div .container -->
+</body>
+</html>
